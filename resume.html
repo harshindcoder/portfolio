@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Harsh's Portfolio</title>
+  <title>Harsh's Resume</title>
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -46,21 +46,21 @@
       border-bottom: 2px solid #333;
     }
     main {
-      max-width: 700px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
-    }
-    img {
-      max-width: 200px;
-      border-radius: 50%;
-      display: block;
-      margin: 1rem auto;
     }
     footer {
       text-align: center;
       padding: 1rem;
       background: #f1f1f1;
       margin-top: 3rem;
+    }
+    iframe {
+      width: 100%;
+      height: 1000px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
     }
     a {
       color: #0056b3;
@@ -71,36 +71,21 @@
 <body>
   <header>
     <h2 class="website-header-icon" id="face">^ ‿ ^</h2>
-    <h3 class="website-header-title">Harsh's Portfolio</h3>
+    <h3 class="website-header-title">Harsh's Resume</h3>
   </header>
 
   <nav>
-    <a href="index.html">posts</a>
-    <a href="about.html">about</a>
-    <a href="resume.html">resume</a>
+    <a href="index.html">Posts</a>
+    <a href="about.html">About</a>
+    <a href="resume.html" class="active">Resume</a>
   </nav>
 
   <main>
-    <h1>About Me</h1>
-    <img src="images/journey.jpeg" alt="Profile Photo">
+    <h1>Resume</h1>
+    <p>You can view or download my latest resume below:</p>
+    <iframe src="files/Harsh_Resume.pdf"></iframe>
     <p>
-      Hi! I’m <strong>Harsh Indoria</strong>, a tech enthusiast who loves creating stuff using technology.
-      My interests include reading, (over)thinking, city building games,
-      and recently, I’ve been enjoying data engineering pipelines.
-    </p>
-    <p>
-      I graduated from <strong>IIT Roorkee</strong> with a Integrated M.S. in Applied Mathematics in 2024.
-    </p>
-    <h2>About this website</h2>
-    <p>
-      This is my digital space where I share my learning and projects.
-      All words are typed by me — writing tools are only used for grammar corrections.
-    </p>
-    <p>
-      Email: <a href="mailto:harsh.ind.coder@gmail.com"><strong>harsh.ind.coder@gmail.com</strong></a>
-    </p>
-    <p>
-      Forked from: <a href="https://github.com/Piyush811999/blog">Piyush's blog</a>
+      <a href="files/Harsh_Resume.pdf" target="_blank">Download PDF Version</a>
     </p>
   </main>
 
