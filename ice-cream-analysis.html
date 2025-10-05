@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Customer Analysis</title>
+    <meta name="description" content="Analysis of customer ice cream preferences to improve sales and decision-making.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto Mono', monospace; margin: 20px; line-height: 1.6; }
+        header, footer { text-align: center; margin-bottom: 30px; }
+        h1, h2, h3, h4 { margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        a { color: #1a0dab; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { margin-left: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2 style="cursor:pointer;">^ ‿ ^</h2>
+    <h3>Harsh's Analytics Projects</h3>
+</header>
+
+<main>
+    <article>
+        <h1>🍦 Ice Cream Customer Analysis</h1>
+        <h4>Understanding customer preferences to improve flavors, pricing, and marketing</h4>
+        <hr>
+
+        <section>
+            <h2>📌 Overview</h2>
+            <p>This project analyzes customer preferences for ice cream flavors using a structured data lifecycle approach. The goal is to help the company understand trends and improve decision-making using real customer data.</p>
+        </section>
+
+        <section>
+            <h2>📊 Data Lifecycle Process</h2>
+
+            <h3>1 Plan: Defining the Data Needs</h3>
+            <ul>
+                <li><strong>Date & Time:</strong> When the ice cream was purchased.</li>
+                <li><strong>Flavor:</strong> Type of ice cream bought.</li>
+                <li><strong>Price:</strong> Cost of the ice cream.</li>
+                <li><strong>Reason:</strong> Optional customer feedback.</li>
+                <li><strong>Customer Age:</strong> Analyze preferences by age group.</li>
+                <li><strong>Customer Location:</strong> Latitude and longitude.</li>
+                <li><strong>Rating:</strong> Customer rating (1-5).</li>
+            </ul>
+            <p><strong>Expected Insights:</strong> Popular flavors by season, age, location; price impact on sales; customer satisfaction trends.</p>
+
+            <h3>2 Capture: Collecting the Data</h3>
+            <ul>
+                <li>Data collected at point of sale.</li>
+                <li>Customers optionally provide details.</li>
+                <li>Store location used to retrieve coordinates.</li>
+            </ul>
+
+            <h3>3 Manage: Storing and Securing Data</h3>
+            <ul>
+                <li>Data stored in MySQL for structured queries.</li>
+                <li>Secure access controls for sensitive info.</li>
+                <li>Regular backups maintained.</li>
+            </ul>
+
+            <h3>4 Analyze: Extracting Insights</h3>
+            <p><strong>Tools Used:</strong> MySQL, Tableau</p>
+            <ul>
+                <li>Popular flavors by age group.</li>
+                <li>Sales trends over time, season, and location.</li>
+                <li>Customer satisfaction ratings.</li>
+                <li>Heatmap of purchases by region.</li>
+            </ul>
+
+            <h3>5 Archive: Managing Old Data</h3>
+            <ul>
+                <li>Data older than 3 years archived for historical reference.</li>
+                <li>Summarized reports generated.</li>
+                <li>Older datasets stored on separate hard drives.</li>
+            </ul>
+
+            <h3>6 Destroy: Removing Unnecessary Data</h3>
+            <ul>
+                <li>Delete data no longer needed.</li>
+                <li>Anonymize personal details before deletion.</li>
+                <li>Use secure data wiping methods for compliance.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📈 Data Analysis & Dashboard</h2>
+            <p>We created a <strong>Customer Rating Analysis Dashboard</strong> in Tableau to visualize insights.</p>
+            <p><strong>🔗 View the Dashboard Here:</strong></p>
+            <div class='tableauPlaceholder' id='viz1759642857437' style='position: relative'><noscript><a href='#'><img alt='Ice Cream Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ic&#47;IceCreamSalesDashboard_17428764631180&#47;IceCreamDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IceCreamSalesDashboard_17428764631180&#47;IceCreamDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ic&#47;IceCreamSalesDashboard_17428764631180&#47;IceCreamDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='showOnboarding=true' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1759642857437');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <h3>Key Insights from the Dashboard</h3>
+            <ul>
+                <li>Most popular ice cream flavors by location.</li>
+                <li>Age groups with highest consumption in each area.</li>
+                <li>Heatmaps showing high-demand sales locations.</li>
+                <li>Seasonal flavor trends across different locations.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📢 Conclusion</h2>
+            <p>This project provides actionable insights into customer ice cream preferences, helping optimize flavors, pricing, and marketing strategies based on real customer behavior.</p>
+            <p>✅ If you found this project useful, star this repo ⭐ and contribute with suggestions!</p>
+        </section>
+
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2025 Harsh Indoria</p>
+    <p>Date added: Oct 5, 2025 | Last updated: Oct 5, 2025 | Location: India</p>
+    <p><a href="index.html">posts</a> | <a href="about.html">about</a></p>
+</footer>
+
+</body>
+</html>
