@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harsh's Portfolio</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 1.5rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .website-header-icon {
+      font-size: 2rem;
+      cursor: pointer;
+      margin: 0;
+    }
+    .website-header-title {
+      margin: 0.2rem 0 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      background: #f1f1f1;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a.active {
+      border-bottom: 2px solid #333;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    img {
+      max-width: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 1rem auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f1f1f1;
+      margin-top: 3rem;
+    }
+    a {
+      color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 class="website-header-icon" id="face">^ ‿ ^</h2>
+    <h3 class="website-header-title">Harsh's Portfolio</h3>
+  </header>
+
+  <nav>
+    <a href="index.html">Posts</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h1>About Me</h1>
+    <img src="images/journey.jpeg" alt="Profile Photo">
+    <p>
+      Hi! I’m <strong>Harsh Indoria</strong>, a tech enthusiast who loves creating stuff using technology.
+      My interests include reading, (over)thinking, city building games,
+      and recently, I’ve been enjoying data engineering pipelines.
+    </p>
+    <p>
+      I graduated from <strong>IIT Roorkee</strong> with a Integrated M.S. in Applied Mathematics in 2024.
+    </p>
+    <h2>About this website</h2>
+    <p>
+      This is my digital space where I share my learning and projects.
+      All words are typed by me — writing tools are only used for grammar corrections.
+    </p>
+    <p>
+      Email: <a href="mailto:harsh.ind.coder@gmail.com"><strong>harsh.ind.coder@gmail.com</strong></a>
+    </p>
+    <p>
+      Forked from: <a href="https://github.com/Piyush811999/blog">Piyush's blog</a>
+    </p>
+  </main>
+
+  <footer>&copy; 2025 Harsh Indoria.</footer>
+
+  <script>
+    const face = document.getElementById("face");
+    const faces = ["^ ‿ ^", "0 ‿ 0", "ಠ ‿ ಠ"];
+
+    function blink() {
+      face.textContent = faces[Math.floor(Math.random() * faces.length)];
+      setTimeout(() => face.textContent = "^ ‿ ^", 500);
+    }
+
+    document.querySelectorAll("a, button, .website-header-icon").forEach(el => {
+      el.addEventListener("mouseover", () => face.textContent = "0 ‿ 0");
+      el.addEventListener("mouseout", () => face.textContent = "^ ‿ ^");
+    });
+
+    setInterval(blink, 3000);
+  </script>
+</body>
+</html>
