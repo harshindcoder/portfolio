@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Harsh Indoria | Resume</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mywebsitestyle.css">
 </head>
@@ -15,7 +16,6 @@
         <h1>Harsh Indoria</h1>
         <p>
             harsh.ind.coder@gmail.com |
-            +91-8824356811 |
             <a href="https://www.linkedin.com/in/harsh-indoria" target="_blank">LinkedIn</a> |
             <a href="https://github.com/harshindcoder" target="_blank">GitHub</a>
         </p>
@@ -23,13 +23,19 @@
 
     <!-- SUMMARY -->
     <section>
-        <h2>Summary</h2>
-        <p>
-            Data professional with a strong foundation in applied mathematics and hands-on experience 
-            building scalable data solutions on GCP. Skilled in designing ETL pipelines, data modeling, 
-            and workflow automation with Spark, Airflow, and dbt. Adept at integrating diverse data 
-            sources to power analytics, machine learning, and BI use cases.
-        </p>
+            <div class="container">
+              <h2>My Journey Into Data</h2>
+              <p>
+                My journey into data began during the final year of my graduation, when I developed a strong curiosity for data analysis and its real-world impact. What started as an interest in extracting insights quickly evolved into a deeper exploration of the entire data ecosystem from analytics and machine learning to data engineering and cloud infrastructure.
+              </p>
+              <p>
+                Over the past year, I intentionally explored multiple layers of the data stack to understand how raw data transforms into business decisions. This phase allowed me to build a solid foundation in SQL, Python, statistical modeling, Spark, dashboarding, cloud platforms, and scalable system design.
+              </p>
+              <p>
+                Today, I am consolidating that breadth into focused depth designing production-ready data pipelines, building scalable architectures, and developing analytics solutions that bridge technical execution with measurable business impact. My learning path reflects structured curiosity, engineering discipline, and a long-term vision of building robust, end-to-end data systems.
+              </p>
+            </div>
+        <img src="./images/carrier_journey.png" height="1000px" width="1000px">
     </section>
 
     <!-- SKILLS -->
@@ -78,55 +84,184 @@
 
     </section>
 
-    <!-- PROJECTS -->
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <div class="job-header">
-                <h3>RAG Pipeline for Document Querying — PanScience Innovations</h3>
-                <span>Oct 2025</span>
-            </div>
-            <p>
-                <a href="https://github.com/harshindcoder/rag_pipeline_PanScience_Innovations" target="_blank">
-                    GitHub Repository
-                </a>
-            </p>
-            <ul>
-                <li>Built a RAG system for querying PDFs using FastAPI and ChromaDB.</li>
-                <li>Implemented embeddings, vector search, and LLM answer generation.</li>
-                <li>Containerized using Docker.</li>
-            </ul>
+   <!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+    <div class="project">
+        <div class="job-header">
+            <h3>Cafe Analytics Infrastructure (Data Engineering System)</h3>
+            <span>Dec 2025</span>
         </div>
-
-        <div class="project">
-            <div class="job-header">
-                <h3>RAG Data Pipeline — Bay Wheels Chatbot</h3>
-                <span>Jul 2025</span>
-            </div>
-            <p>
-                <a href="https://github.com/harshindcoder/Bay-wheels-ChatBot" target="_blank">
-                    GitHub Repository
-                </a>
-            </p>
-            <ul>
-                <li>Developed RAG chatbot using LangChain, Pinecone, and HF embeddings.</li>
-                <li>Automated ingestion and optimized inference with Mistral via Ollama.</li>
-            </ul>
+        <p>
+            <a href="https://github.com/harshindcoder/cafe-analytics-infrastructure" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <ul>
+            <li>Built a containerized data analytics infrastructure focused on extracting, storing, and visualizing cafe transactional data.</li>
+            <li>Designed analytics-ready architecture using PostgreSQL as the core data store.</li>
+            <li>Automated data ingestion with Python, and orchestrated multi-container services with Docker and Docker Compose.</li>
+            <li>Integrated Apache Superset for interactive dashboards and multi-user analytics access.</li>
+            <li>Tackled real-world engineering issues like dependency compatibility, container networking, and secure dashboard access for production-like environments.</li>
+        </ul>
+    </div>
+    <!-- RAG Project 1 -->
+    <div class="project">
+        <div class="job-header">
+            <h3>Production-Ready RAG Pipeline — PanScience Innovations</h3>
+            <span>Oct 2025</span>
         </div>
+        <p>
+            <a href="https://github.com/harshindcoder/rag_pipeline_PanScience_Innovations" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <ul>
+            <li>Designed and implemented a Retrieval-Augmented Generation (RAG) system for querying large PDF document collections.</li>
+            <li>Built ingestion, vector embedding generation, and context-aware semantic search using ChromaDB and LLMs.</li>
+            <li>Developed scalable REST APIs with FastAPI; containerized with Docker for production readiness.</li>
+        </ul>
+    </div>
 
-    </section>
+    <!-- RAG Chatbot Project -->
+    <div class="project">
+        <div class="job-header">
+            <h3>RAG Data Engineering Pipeline — Bay Wheels Chatbot</h3>
+            <span>Jul 2025</span>
+        </div>
+        <p>
+            <a href="https://github.com/harshindcoder/Bay-wheels-ChatBot" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <ul>
+            <li>Built an end-to-end RAG chatbot using LangChain with vector search powered by Pinecone and HuggingFace embeddings.</li>
+            <li>Optimized inference performance by integrating Mistral models via Ollama for efficient local LLM execution.</li>
+            <li>Automated data ingestion workflows to scale the knowledge base efficiently.</li>
+        </ul>
+    </div>
+
+    <!-- Data Analytics Project: People Analytics -->
+    <div class="project">
+        <div class="job-header">
+            <h3>People Analytics Case Study</h3>
+            <span>Mar 2025</span>
+        </div>
+        <p>
+            <a href="https://github.com/harshindcoder/people_analytics_case_study" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <ul>
+            <li>Performed end-to-end employee retention analysis using Python, SQL, and visualization tools.</li>
+            <li>Designed database schema and followed the complete data analysis cycle (ask → prepare → process → analyze → share → act).
+            <li>Extracted actionable insights on hiring satisfaction, onboarding efficiency, and turnover drivers with visual storytelling.</li>
+        </ul>
+    </div>
+
+    <!-- Data Analytics Project: Retail Clustering -->
+    <div class="project">
+        <div class="job-header">
+            <h3>Online Retail Customer Segmentation</h3>
+            <span>Jul 2025</span>
+        </div>
+        <p>
+            <a href="https://github.com/harshindcoder/online_retail_data_clustering_project" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <ul>
+            <li>Segmented retail customers based on purchasing behavior using RFM (Recency, Frequency, Monetary) analysis.
+            <li>Engineered features, normalized data, and applied K-means clustering for market segmentation insights.</li>
+            <li>Visualized patterns and provided business recommendations on customer value tiers.</li>
+        </ul>
+    </div>
+
+    <!-- Data Analytics Project: Ice Cream Sales -->
+    <div class="project">
+        <div class="job-header">
+            <h3>Ice Cream Sales & Customer Analysis</h3>
+            <span>Feb 2026</span>
+        </div>
+        <p>
+            <a href="https://github.com/harshindcoder/ice_cream_customer_analysis" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <ul>
+            <li>Analyzed retail sales and customer preferences using MySQL for data storage and Tableau for dashboard visualization.</li>
+            <li>Performed age-based and flavor-based trend analysis to guide product strategy and inventory decisions.</li>
+        </ul>
+    </div>
+    
+    <!-- SQL & Data Warehouse Project -->
+    <div class="project">
+        <div class="job-header">
+            <h3>SQL Data Warehouse & ETL Project</h3>
+            <span>Apr 2025</span>
+        </div>
+        <p>
+            <a href="https://github.com/harshindcoder/sql_data_warehouse_project" target="_blank">
+                View on GitHub
+            </a>
+        </p>
+        <ul>
+            <li>Designed and built a modern data warehouse using MySQL with ETL processes and analytics readiness in focus.
+            <li>Implemented data modeling, schema design, and reporting SQL queries for business queries.</li>
+            <li>Emphasized clean transformation logic and performance-aware query engineering.</li>
+        </ul>
+    </div>
+
+</section>
+
 
     <!-- EDUCATION -->
-    <section>
-        <h2>Education</h2>
-        <div class="job-header">
-            <h3>Indian Institute of Technology Roorkee</h3>
-            <span>Aug 2019 – Jun 2024</span>
-        </div>
-        <p>BS + MS in Applied Mathematics | CGPA: 9.1/10</p>
-        <p>Relevant coursework: Linear Algebra, Probability, Statistics, OOP, DSA, DBMS, Data Mining, Parallel Computing</p>
-    </section>
+<section>
+    <h2>Education</h2>
+
+    <div class="job-header">
+        <h3>Indian Institute of Technology Roorkee</h3>
+        <span>Aug 2019 – Jun 2024</span>
+    </div>
+
+    <p><strong>BS + MS in Applied Mathematics</strong> | CGPA: 9.1/10</p>
+
+    <div class="coursework">
+
+        <h4>Core Mathematical Foundations</h4>
+        <ul>
+            <li><strong>Linear Algebra:</strong> Vector spaces, linear transformations, eigenvalues & eigenvectors, diagonalization, Jordan canonical form, inner product spaces, Gram-Schmidt orthogonalization.</li>
+            <li><strong>Real Analysis I & II:</strong> Metric spaces, compactness, sequences and series, Riemann & Lebesgue integration, measure theory, convergence theorems.</li>
+            <li><strong>Complex Analysis:</strong> Analytic functions, Cauchy-Riemann equations, harmonic functions, power series, contour integration.</li>
+        </ul>
+
+        <h4>Applied & Computational Mathematics</h4>
+        <ul>
+            <li><strong>Numerical Methods:</strong> Error analysis, root-finding algorithms, interpolation, numerical differentiation & integration, eigenvalue computation, numerical solutions of ODEs & PDEs.</li>
+            <li><strong>Partial Differential Equations:</strong> Finite difference methods, stability & convergence analysis, elliptic, parabolic & hyperbolic PDEs.</li>
+            <li><strong>Optimization Techniques:</strong> Linear & nonlinear programming, dynamic programming, gradient methods, constrained optimization, multi-objective optimization.</li>
+            <li><strong>Mathematical Modeling:</strong> Difference equations, discrete models, stability analysis.</li>
+        </ul>
+
+        <h4>Probability, Statistics & Data-Oriented Mathematics</h4>
+        <ul>
+            <li><strong>Statistical Inference:</strong> Estimation theory, maximum likelihood estimation, hypothesis testing, Neyman-Pearson lemma, likelihood ratio tests, ANOVA, regression.</li>
+            <li><strong>Probability & Measure Theory:</strong> Measure spaces, Lebesgue measure, convergence concepts, integration theory.</li>
+        </ul>
+
+        <h4>Discrete & Computational Foundations</h4>
+        <ul>
+            <li><strong>Discrete Mathematics:</strong> Logic & proofs, recurrence relations, generating functions, Boolean algebra, graph theory, finite automata.</li>
+            <li><strong>Data Structures:</strong> Arrays, stacks, queues, linked lists, trees, graphs, sorting & searching algorithms, hash tables.</li>
+        </ul>
+
+    </div>
+</section>
+<section> <h2>Research & Publications</h2> 
+          <ul>
+             <li> <strong>Effects of memory on inventory control and pricing policy for imperfect production with rework process</strong><br> M. Jain, H. Indoria, A. Chaudhary, P. Singh – This study examines how memory influences inventory control decisions and pricing strategies in production systems where rework is necessary. </li> 
+            </ul> 
+        </section>
 
     <!-- CERTIFICATIONS -->
     <section>
